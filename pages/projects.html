@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,23 +7,43 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/bootstrap.min.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
         <!-- navbar in the header -->
-        <div class="topnav">
-            <div class="top-left">
-                <a class="active" href="#index">Seb W. Lafleur</a>
-            </div>
-            <div class="top-right">
-                <a href="../pages/index.html">About</a>
-                <a href="../pages/projects.html">Projects</a>
-                <a href="../pages/companies.html">Companies</a>
-                <a href="../pages/blogs.html">Blog</a>
-            </div>
-        </div>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="../pages/index.html">Seb W. LaFleur</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../pages/index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/companies.html">Companies</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/blogv2.html">Blog</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                    </li> -->
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </header>
         <div class='page-header'>
             <h1>Projects</h1>
         </div>    
@@ -135,9 +151,7 @@
                 </div>
             </div>
         </div>
-
-
         
-        <script src="" async defer></script>
+        <script src="../scripts/bootstrap.bundle.min.js"></script>
     </body>
 </html>
